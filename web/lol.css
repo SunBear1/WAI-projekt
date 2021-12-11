@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    background-color: #222;
+  }
+  h1{
+      color: #f2f2f2;
+      font-family: 'Muli', sans-serif;
+      text-align: center;
+      font-size: 50px;
+  }
+  h2{
+    font-family: 'Muli', sans-serif;
+    color: #f2f2f2;
+    font-size: 35px;
+  }
+table {
+    font-family: 'Muli', sans-serif;
+    border-collapse: collapse;
+    width: 196%;
+    border: 5px solid #664848;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: floralwhite;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: floralwhite;
+}
+p1 {
+    color: black;
+    font-size: 20px;
+}
+button {
+    background-color: #664848;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 30px;
+    cursor: pointer;
+}
+p {
+    color: #f2f2f2;
+    font-size: 20px;
+}
+  /* Style the header */
+  .header {
+    background-color: #222;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #664848;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+  }
+  .topnav span {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+  }
+  .active{
+    background-color: #222;
+   }
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:1200px) {
+    .column {
+      width: 100%;
+    }
+    img.picture {
+        display: none;
+    }
+  }

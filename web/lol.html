@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lol.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title> PROJEKT WAI&HiH </title>
+    <script>
+        $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+        });
+        });
+    </script>
+    <script>
+        $( function() {
+        $( "#tabs" ).tabs();
+        } );
+    </script>
+</head>
+<body>
+
+    <div class="header">
+      <h1>LEAGUE OF LEGENDS</h1>
+        <br>
+    </div>
+    
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <span>Sceny : </span>
+        <a class="active" href="lol.html">League of Legends</a>
+        <a href="csgo.html">Counter Strike</a>
+		<a href="upload.php">Przesyłanie Plików</a>
+        <a href="imagegalery.php">Galeria Zdjęć</a>
+        <a href="loginfom.php">Logowanie</a>
+        <a href="search.html">Wyszukiwanie</a>
+    </div>
+    
+    <div class="row">
+        <div class="column">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Mistrzostwa Świata</a></li>
+                    <li><a href="#tabs-2">Nowy Utwór</a></li>
+                    <li><a href="#tabs-3">Jankos</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p1>Obecna odsłona G2 była niesamowita. Ich śmiały rajd przez oba splity, zdobycie tytułu MSI, wszystkie emocje i odwaga, z jaką drużyna prezentowała światu swój pomysł na rozegranie Riftu. Legendarne SKT nie było wyzwaniem dla Samurajów, ale FPX nie miało sobie równych w całej mistrzowskiej stawce. Zasłużony puchar pozostaje w Chinach, gdy nowy władca rozpościera swoje skrzydła i rzuca cień na szanse i marzenia pozostałych pretendentów. Gratulacje dla FPX, nowych mistrzów świata!</p1>
+                </div>
+                <div id="tabs-2">
+                    <p1> Debiutancki singiel True Damage z udziałem Ekko, Akali, Senny, Qiyany i Yasuo powstał w ramach nowej, hip-hopowej współpracy i zdobywa świat. <a href="https://www.youtube.com/watch?v=sVZpHFXcFJw&feature=youtu.be"  target="_blank">Teledysk</a></p1>
+                   
+                </div>
+                <div id="tabs-3">
+                    <p1>Prawdziwym wyzwaniem dla Jankosa miała się zatem okazać dopiero mistrzowska stawka. Talenty takie jak Clid, Tarzan czy Ning miały zweryfikować wartość Polaka. Poprzeczka została zawieszona naprawdę wysoko również przez media, bo pamiętny artykuł ESPN umieścił Jankosa na samym szczycie rankingu zawodników całej rywalizacji. Wszystko wskazuje jednak na to, że jak najbardziej słusznie. Tarzan owszem, zmusił Jankosa do wielu błędów i między innymi dzięki jego zasługom Griffin wyszło z grupy A jako pierwsze, a G2 jako drugie. W ostatecznym rozrachunku obie ekipy nie zdążyły spotkać się na gruncie bardziej sprawiedliwej serii BO5, a szkoda. Tarzan rozegrał jednak świetną fazę grupową tylko po to, by tydzień później totalnie posypać się w starciu z Ningiem i jego IG. Obu tamtych ćwierćfinalistów nie ma już zresztą nawet w rywalizacji, bo jeden po drugim z niej odpadli. Jankos pozostał w niej natomiast na tyle długo, by powalić na kolana Canyona z Damwon Gaming i, przede wszystkim, legendarnego Clida z SKT w ostatni weekend. Pojedynek z koreańskim mistrzem wielu ekspertów uważa za ostatni etap, za swoistą walkę z bossem. Tę, co warto dodać, Jankos rozegrał wyśmienicie, zgarniając za nią nawet MVP półfinału.</p1>
+                </div>
+            </div>
+            <br>
+            <h2>Najlepsi zawodnicy na świecie 2019 roku : </h2>
+            <input id="myInput" type="text" placeholder="Wyszukaj...">
+            <br><br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Pseudonim</th>
+                        <th>Pozycja</th>
+                        <th>Drużyna</th>
+                        <th>Narodowość</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                        <td>Kang</td>
+                        <td>Seung-lok</td>
+                        <td>TheShy</td>
+                        <td>Góra</td>
+                        <td>Invictus Gaming</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Gao</td>
+                        <td>Zhen-Ning</td>
+                        <td>Ning</td>
+                        <td>Dżungla</td>
+                        <td>Invictus Gaming</td>
+                        <td>Chiny</td>
+                    </tr>
+                    <tr>
+                        <td>Song</td>
+                        <td>Eui-jin</td>
+                        <td>Rookie</td>
+                        <td>Środek</td>
+                        <td>Invictus Gaming</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Yu</td>
+                        <td>Wen-Bo</td>
+                        <td>JackeyLove	</td>
+                        <td>Dół</td>
+                        <td>Invictus Gaming</td>
+                        <td>Chiny</td>
+                    </tr>
+                    <tr>
+                        <td>Wang</td>
+                        <td>Liu-Yi</td>
+                        <td>Baolan</td>
+                        <td>Wsparcie</td>
+                        <td>Invictus Gaming</td>
+                        <td>Chiny</td>
+                    </tr>
+                    <tr>
+                        <td>Kim</td>
+                        <td>Han-saem</td>
+                        <td>GimGoon</td>
+                        <td>Góra</td>
+                        <td>FunPlus Phoenix</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Gao</td>
+                        <td>Tian-Liang</td>
+                        <td>Tian</td>
+                        <td>Dżungla</td>
+                        <td>FunPlus Phoenix</td>
+                        <td>Chiny</td>
+                    </tr>
+                    <tr>
+                        <td>Kim</td>
+                        <td>Tae-sang</td>
+                        <td>Doinb</td>
+                        <td>Środek</td>
+                        <td>FunPlus Phoenix</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Lin</td>
+                        <td>Wei-Xiang</td>
+                        <td>JackeyLove	</td>
+                        <td>Dół</td>
+                        <td>FunPlus Phoenix</td>
+                        <td>Chiny</td>
+                    </tr>
+                    <tr>
+                        <td>Liu</td>
+                        <td>Qing-Song</td>
+                        <td>Baolan</td>
+                        <td>Wsparcie</td>
+                        <td>FunPlus Phoenix</td>
+                        <td>Chiny</td>
+                    </tr>
+                    <tr>
+                        <td>Martin</td>
+                        <td>Hansen</td>
+                        <td>Wunder</td>
+                        <td>Góra</td>
+                        <td>G2 Esports</td>
+                        <td>Norwegia</td>
+                    </tr>
+                    <tr>
+                        <td>Marcin</td>
+                        <td>Jankowski</td>
+                        <td>Jankos</td>
+                        <td>Dżungla</td>
+                        <td>G2 Esports</td>
+                        <td>Polska</td>
+                    </tr>
+                    <tr>
+                        <td>Rasmus</td>
+                        <td>Winther</td>
+                        <td>Caps</td>
+                        <td>Środek</td>
+                        <td>G2 Esports</td>
+                        <td>Norwegia</td>
+                    </tr>
+                    <tr>
+                        <td>Luka</td>
+                        <td>Perković</td>
+                        <td>Perkz</td>
+                        <td>Dół</td>
+                        <td>G2 Esports</td>
+                        <td>Chorwacja</td>
+                    </tr>
+                    <tr>
+                        <td>Mihael</td>
+                        <td>Mehle</td>
+                        <td>Mikyx</td>
+                        <td>Wsparcie</td>
+                        <td>G2 Esports</td>
+                        <td>Słowenia</td>
+                    </tr>
+                    <tr>
+                        <td>Kim</td>
+                        <td>Dong-ha</td>
+                        <td>Khan</td>
+                        <td>Góra</td>
+                        <td>SK Telecom T1</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Kim</td>
+                        <td>Tae-min</td>
+                        <td>Clid</td>
+                        <td>Dżungla</td>
+                        <td>SK Telecom T1</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Lee</td>
+                        <td>Sang-hyeoktd</td>
+                        <td>Faker</td>
+                        <td>Środek</td>
+                        <td>SK Telecom T1</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Park</td>
+                        <td>Jin-seong</td>
+                        <td>Teddy</td>
+                        <td>Dół</td>
+                        <td>SK Telecom T1</td>
+                        <td>Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Lee</td>
+                        <td>Sang-ho</td>
+                        <td>Effort</td>
+                        <td>Wsparcie</td>
+                        <td>SK Telecom T1</td>
+                        <td>Korea</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <br />
+        </div> 
+      <div class="column">
+          <a href="https://eune.leagueoflegends.com" target="_blank"><img class="picture" src="lol.png" alt="esport-home" width="438" height="250"></a>
+    </div>
+    </div>
+    </body>
+</html>

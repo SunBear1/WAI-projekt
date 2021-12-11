@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PROJEKT WAI&HiH</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="galery.css"/>
+    <script>
+function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    xmlhttp=new XMLHttpRequest();
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="";
+    }
+  }
+  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+</head>
+<body>
+      <h1>WYSZUKIWANIE</h1>
+    <br>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <span>Sceny : </span>
+        <a href="lol.html">League of Legends</a>
+        <a href="csgo.html">Counter Strike</a>
+        <a href="upload.php">Przesyłanie Plików</a>
+        <a href="imagegalery.php">Galeria Zdjęć</a>
+        <a href="loginform.php">Logowanie</a>
+        <a class="active" href="search.html">Wyszukiwanie</a>
+    </div>
+<br>
+<br>
+<br>
+    <h2>Wpisz frazę :</h2>
+    <form>
+        <p><input type="text" size="30" onkeyup="showResult(this.value)" /></p>
+    </form>
+    <div id="livesearch"></div>
+</body>
+</html>
